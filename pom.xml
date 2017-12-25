@@ -8,32 +8,11 @@
     <artifactId>jmetertest</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>3.0-alpha-1</version>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.13</version>
-        </dependency>
-        <!-- <dependency> <groupId>org.apache.jmeter</groupId> <artifactId>ApacheJMeter_jdbc</artifactId>
-            <version>2.11</version> </dependency> <dependency> <groupId>com.oracle</groupId>
-            <artifactId>ojdbc14</artifactId> <version>10.2.0.5</version> </dependency> -->
-        <!-- MySql 5.5 Connector -->
-    </dependencies>
+
     <properties>
-        <jmeter.result.jtl.dir>${project.build.directory}/jmeter/results</jmeter.result.jtl.dir>
-        <jmeter.result.html.dir>${project.build.directory}/jmeter/html</jmeter.result.html.dir>
-        <jmeter.result.html.dir1>${project.build.directory}/jmeter/html1</jmeter.result.html.dir1>
+        <jmeter.result.jtl.dir>${project.build.directory}\jmeter\results</jmeter.result.jtl.dir>
+        <jmeter.result.html.dir>${project.build.directory}\jmeter\html</jmeter.result.html.dir>
+        <jmeter.result.html.dir1>${project.build.directory}\jmeter\html1</jmeter.result.html.dir1>
         <ReportName>TestReport</ReportName>
     </properties>
     <pluginRepositories>
@@ -159,14 +138,6 @@
                         </manifest>
                     </archive>
                 </configuration>
-                <!-- using XSLT 2.0 -->
-                <dependencies>
-                    <dependency>
-                        <groupId>net.sf.saxon</groupId>
-                        <artifactId>saxon</artifactId>
-                        <version>8.7</version>
-                    </dependency>
-                </dependencies>
             </plugin>
         </plugins>
         <defaultGoal>clean</defaultGoal>
