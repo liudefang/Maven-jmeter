@@ -10,9 +10,9 @@
 
 
     <properties>
-        <jmeter.result.jtl.dir>${project.build.directory}\jmeter\results</jmeter.result.jtl.dir>
-        <jmeter.result.html.dir>${project.build.directory}\jmeter\html</jmeter.result.html.dir>
-        <jmeter.result.html.dir1>${project.build.directory}\jmeter\html1</jmeter.result.html.dir1>
+        <jmeter.result.jtl.dir>${project.build.directory}/jmeter/results</jmeter.result.jtl.dir>
+        <jmeter.result.html.dir>${project.build.directory}/jmeter/html</jmeter.result.html.dir>
+        <jmeter.result.html.dir1>${project.build.directory}/jmeter/html1</jmeter.result.html.dir1>
         <ReportName>TestReport</ReportName>
     </properties>
     <pluginRepositories>
@@ -62,7 +62,7 @@
                     <target>1.6</target>
                     <encoding>UTF-8</encoding>
                     <compilerArguments>
-                        <extdirs>src\test\jmeter\lib</extdirs>
+                        <extdirs>src/test/jmeter/lib</extdirs>
                     </compilerArguments>
                 </configuration>
             </plugin>
@@ -83,7 +83,7 @@
                     <transformationSets>
                         <transformationSet>
                             <dir>${jmeter.result.jtl.dir}</dir>
-                            <stylesheet>src\test\resources\jmeter-results-detail-report_21.xsl</stylesheet>
+                            <stylesheet>src/test/resources/jmeter-results-detail-report_21.xsl</stylesheet>
                             <outputDir>${jmeter.result.html.dir}</outputDir>
                             <fileMappers>
                                 <fileMapper
@@ -94,7 +94,7 @@
                         </transformationSet>
                         <transformationSet>
                             <dir>${jmeter.result.jtl.dir}</dir>
-                            <stylesheet>src\test\resources\jmeter.results.shanhe.me.xsl</stylesheet>
+                            <stylesheet>src/test/resources/jmeter.results.shanhe.me.xsl</stylesheet>
                             <outputDir>${jmeter.result.html.dir1}</outputDir>
                             <fileMappers>
                                 <fileMapper
